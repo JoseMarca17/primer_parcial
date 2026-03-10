@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.container_principal {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-template-rows: auto auto;
+    gap: 30px;
+    background-color: #2b2b2b;
+    border-radius: 8px;
+    padding: 30px 40px;
+    width: 100%;
+    max-width: 600px;
+}
+.box_message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    border-radius: 50%;
+    flex-shrink: 0;
+    grid-column: 2;
+    grid-row: 1 / 3;
+}
+
+.text_message p:first-child {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.text_message {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.icon_message {
+    width: 50px;
+    height: 40px;
+    background-color: orange;
+    border: 2px solid white;
+    border-radius: 8px;
+    position: relative;
+}
+
+.icon_message::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-top: 10px solid #ff9800;
+    bottom: -10px;
+    right: 10px;
+}
+
+
+.letra_verde {
+    color: green;
+}
+
+.letra_mes {
+    color: white;
+}
+
+.text_percent {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    grid-column: 1;
+    grid-row: 2;
+}
+
